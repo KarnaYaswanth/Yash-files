@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buspass</title>
+</head>
+<body>
+    <center><h1> TELANGANA STATE ROAD TRANSPORT CO-OPERATION</h1></center>
+    <center><h2> GENERAL BUS PASS APPLICATION </h2></center>
+    <form action="./Registre.html" method="post">
+        <fieldset>
+            <legend><b> Applicant Details</b></legend>
+            <dl>
+                <dd>
+                    <label for="name"> NAME</label>
+                    <input type="text" name="name" id="name" required pattern="[a-zA-Z]+" autocomplete="off">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="fname"> FATHERS NAME </label>
+                    <input type="text" name="fname" id="fname" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="dob"> DATE OF BIRTH</label>
+                    <input type="date" name="dob" id="dob" required autocomplete="off">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="gender"> GENDER </label>
+                    <input type="radio" name="gender" id="male" value="Male" required autocomplete="off">
+                    <label for="male"> MALE</label>
+                    <input type="radio" name="gender" id="female" value="Female" required autocomplete="off">
+                    <label for="female"> FEMALE</label>
+                </dd>
+                <dd>
+                    <label for="age"> AGE </label>
+                    <input type="number" name="age" id="age" required pattern="[/d]+" autocomplete="off">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="aadhar"> Aadhar Number </label>
+                    <input type="number" name="aadhar" id="aadhar" required pattern="[/d]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="phno"> MOBILE NUMBER</label>
+                    <input type="number" name="phno" id="phno" required pattern="[/d]+" autocomplete="off">
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="mail">EMAIL</label>
+                    <input type="mail" name="mail" id="mail" required autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="photo">PHOTO</label>
+                    <input type="file" name="photo" id="photo" required autocomplete="off">
+                </dd>
+            </dl>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend><b> Residential Adress Details </b></legend>
+            <dl>
+                <dd>
+                    <label for="ad"> APPLICANT ADRESS</label>
+                    <textarea name="" id=""></textarea>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="district"> District </label>
+                    <input type="text" name="district" id="district" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="mandal"> MANDAL </label>
+                    <input type="text" name="mandal" id="mandal" required pattern="[a-zA-Z]+" autocomplete="off">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="village"> Village </label>
+                    <input type="text" name="village" id="village" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="pincode"> PINCODE </label>
+                    <input type="number" name="pincode" id="pincode" required pattern="[/d]+" autocomplete="off" min="6">
+                </dd>
+            </dl>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend><b> PASS TYPE AND DETAILS </b></legend>
+            <dl>
+                <dd>
+                    <label for="city"> CITY</label>
+                    <input type="text" name="city" id="city" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="passtype"> PASSTYPE </label>
+                    <input type="text" name="passtype" id="passtype" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+            </dl>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend><b> MODE OF PAYMENT AND PASS COLLECTION </b></legend>
+            <dl>
+                <dd>
+                    <label for="payment mode"> PAYMENT MODE</label>
+                    <input type="text" name="payment mode" id="payment mode" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+                <dd>
+                    <label for="pass delivery mode"> PASS DELIVERY MODE </label>
+                    <input type="text" name="pass delivery mode" id="pass delivery mode" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+            </dl>
+        </fieldset>
+        <center>
+            <input type="submit" value="Submit">
+        </center>
+        
+    </form>
+</body>
+</html>

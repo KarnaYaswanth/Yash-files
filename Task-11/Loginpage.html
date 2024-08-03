@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+</head>
+<body>
+    <center><h1>Login Page</h1></center>
+    <form action="./Register.html" method="post">
+        <fieldset>
+            <legend>Login Details</legend>
+            <dl>
+                <dd>
+                    <label for="name"> User name</label>
+                    <input type="text" name="username" id="name" required pattern="[a-zA-Z]+" autocomplete="off">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="password"> Password</label>
+                    <input type="password" name="password" id="password" required pattern="[a-zA-Z/d@#&]+" autocomplete="off">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="mail"> Mail</label>
+                    <input type="email" name="mail" id="mail" required autocomplete="off">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="phno"> Phone Number</label>
+                    <input type="number" name="phno" id="phno" required pattern="[/d]+" autocomplete="off">
+                </dd>
+            </dl>
+            <center> <input type="submit" value="Login"></center>
+        </fieldset>
+    </form>
+
+</body>
+</html>
